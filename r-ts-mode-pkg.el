@@ -1,0 +1,2 @@
+;; Generated package description from r-ts-mode.el  -*- mode: lisp-data; no-byte-compile: t; lexical-binding:t -*-
+(define-package "r-ts-mode" "1.1.3.0.20260913.11" "R treesitter mode" '((emacs "30.1")) :commit "50ceffa2b79fa316752ae0f49408cac2080ceada" :authors '(("Manuel Teodoro" . "ttm@teoten.me")) :maintainer '("Manuel Teodoro" . "ttm@teoten.me") :url "https://codeberg.org/R-for-emacs/r-ts-mode")
