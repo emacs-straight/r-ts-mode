@@ -1,7 +1,7 @@
 1 R Tree Sitter Mode for Emacs
 ══════════════════════════════
 
-  Version 1.1.3
+  Version 1.2.0
 
   [file:https://melpa.org/packages/r-ts-mode-badge.svg]
 
@@ -60,45 +60,13 @@
 [treesitter.r]
 <https://cran.r-project.org/web/packages/treesitter.r/index.html>
 
-[Usage] See section 4
+[Usage] See section 3
 
 
-3 Installation
-══════════════
-
-  From version 1.1.3 `r-ts-mode' is available on MELPA.
-
-  You can also install it with [straight.el] to have the latest updates
-  easily.
-
-  ┌────
-  │ (straight-use-package
-  │  '(r-ts-mode
-  │    :package "package"
-  │    :host codeberg
-  │    :type git
-  │    :repo "R-for-emacs/r-ts-mode"
-  │    :branch "main"))
-  └────
-
-  You can also clone the repository or download a specific version, and
-  include the content it in `load-path'.
-
-  ┌────
-  │ (add-to-list 'load-path "/path/r-ts-mode/")
-  │ (require 'r-ts-mode)
-  └────
-
-  Or simply download the file `r-ts-mode.el' and load it.
-
-
-[straight.el] <https://github.com/radian-software/straight.el>
-
-
-4 Usage
+3 Usage
 ═══════
 
-4.1 R source code
+3.1 R source code
 ─────────────────
 
   After installing the package and making sure the R tree-sitter grammar
@@ -121,7 +89,7 @@
   └────
 
 
-4.2 Use as a tree sitter mode for ESS
+3.2 Use as a tree sitter mode for ESS
 ─────────────────────────────────────
 
   Set the variable `r-ts-mode-inherit-ess' to true and start using
@@ -139,7 +107,7 @@
   └────
 
 
-4.3 Roxygen
+3.3 Roxygen
 ───────────
 
   Roxygen support is provided through `r-ts-roxygen-mode'. It provides
@@ -158,7 +126,7 @@
   └────
 
 
-4.4 Preparing the grammar from R package
+3.4 Preparing the grammar from R package
 ────────────────────────────────────────
 
   As mentioned in the [Dependencies] section, there are 3 main known
@@ -183,10 +151,10 @@
 <https://cran.r-project.org/web/packages/treesitter.r/index.html>
 
 
-5 Original code and R for Emacs
+4 Original code and R for Emacs
 ═══════════════════════════════
 
-5.1 ESR
+4.1 ESR
 ───────
 
   `r-ts-mode' started following the logic of ESS in which a major mode
@@ -212,7 +180,7 @@
   as long as it was part of ESR.
 
 
-5.1.1 Main changes
+4.1.1 Main changes
 ╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌
 
   The philosophy following the separation from ESR is that only the file
@@ -228,10 +196,10 @@
   ELPA.
 
 
-[Usage] See section 4
+[Usage] See section 3
 
 
-5.2 R for Emacs
+4.2 R for Emacs
 ───────────────
 
   [R-for-emacs] is a new Codeberg Organization to act as a collection of
